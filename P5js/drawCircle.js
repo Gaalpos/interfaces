@@ -10,7 +10,7 @@ function setup() {
 function draw() {
   background(100, 190, 190);
 
-  x = x + 1; 
+  x = x + 300; 
   //y = y - 1;
   if (x > canvasWidth + circleSize / 2) {
     x = -circleSize / 2;
