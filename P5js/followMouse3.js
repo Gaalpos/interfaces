@@ -24,12 +24,12 @@ function draw() {
         fill(226, 252, 0);
         rect(0, middleY, middleX, middleY);
         fill(0, 0, 0);
-        text("arriba derecha", mouseX, mouseY);
+        text("abajo izquierda", mouseX, mouseY);
     }
     if (mouseX > middleX && mouseY > middleY) {
         fill(0, 0, 0);
         rect(middleX, middleY, middleX, middleY);
         fill(255, 255, 255);
-        text("arriba derecha", mouseX, mouseY);
+        text("abajo derecha", mouseX, mouseY);
     }
 }
