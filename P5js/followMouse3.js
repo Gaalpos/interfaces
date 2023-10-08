@@ -2,11 +2,14 @@ function setup() {
     createCanvas(windowWidth, windowHeight);
     textAlign(CENTER);
 }
+function windowResized() {
+    resizeCanvas(windowWidth, windowHeight);
+}
 
 function draw() {
     let middleX = windowWidth / 2;
     let middleY = windowHeight / 2;
-    background(0, 0, 200);
+    background(100, 10, 200);
     rectMode(CORNER);
     if (mouseX < middleX && mouseY < middleY) {
         fill(200, 0, 0);
