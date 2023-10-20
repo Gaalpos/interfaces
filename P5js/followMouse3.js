@@ -7,6 +7,7 @@ function windowResized() {
 }
 
 function draw() {
+    pri
     let middleX = windowWidth / 2;
     let middleY = windowHeight / 2;
     background(100, 10, 200);
