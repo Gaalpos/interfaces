@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="ListenerHTML()"> Haz click! </button>
+    <button id="ListenerJS"> eventListener() desded JS</button>
+    <button id="addEventListenerJS"> addEventListener() desded JS</button>
+    <script>
+
+        // Problema: mezcla de html y JS
+        function ListenerHTML() {
+            console.log("has hecho click: ");
+        }
+
+        // problema: tienes que declarar multiples funciones de lo contrario
+        // si lo vuelves a
+        function clickListener() {
+            console.log("Click listener");
+        }
+
+        const titulo2 = document.getElementById("ListenerJS");
+        // OJO la llamad a la funcion no lleva () de lo contrario se ejecuta directamente
+        titulo2.onclick = clickListener;
+
+
+        /// addEventListener
+
+        // AddEventListener simple
+        const tituloAddEventListener = document.getElementById("addEventListenerJS");
+        function clickAddEventListener() {
+            console.log("Mi crick en el addEventListener");
+        }
+
+        tituloAddEventListener.addEventListener("mousemove", clickAddEventListener);
+        // probar a cambiar arriba 
+    </script>
+
+</body>
+
+</html>
